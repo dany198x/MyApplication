@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/fruit_image"
+        android:layout_width="70dp"
+        android:src="@drawable/loading"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_height="70dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+        <TextView
+            android:id="@+id/fruit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是一个饭店"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:fontFamily="sans-serif"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <com.example.xlhratingbar_lib.XLHRatingBar
+                android:id="@+id/ratingBar5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                app:numStars="5"
+                app:rating="3.5"
+                />
+            <TextView
+                android:id="@+id/avgCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥90/人"
+                android:textSize="14dp"
+                android:textColor="#888"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="8dp">
+    <TextView
+        android:id="@+id/fruit_addressType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="13dp"
+        android:text="TextView"
+        android:textColor="#777"
+        />
+    <TextView
+        android:id="@+id/fruit_type"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:text="TextView"
+        android:textAlignment="viewEnd"
+        android:textColor="#777"
+        />
+</LinearLayout>
+        <!--<TextView-->
+            <!--android:id="@+id/fruit_addressType"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="13dp"-->
+            <!--android:text="TextView"-->
+            <!--android:textColor="#777"-->
+            <!--android:layout_marginTop="8dp"/>-->
+    </LinearLayout>
+
+
+</LinearLayout>
